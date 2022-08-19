@@ -21,7 +21,7 @@ get_ipython().system('pip --version')
 import pymongo
 
 
-client = pymongo.MongoClient("mongodb://kittu:Kittu1995@ac-nsrwuca-shard-00-00.dldhqvh.mongodb.net:27017,ac-nsrwuca-shard-00-01.dldhqvh.mongodb.net:27017,ac-nsrwuca-shard-00-02.dldhqvh.mongodb.net:27017/?ssl=true&replicaSet=atlas-793vv6-shard-0&authSource=admin&retryWrites=true&w=majority")
+client = pymongo.MongoClient("mongodb://<username>:<password>@ac-nsrwuca-shard-00-00.dldhqvh.mongodb.net:27017,ac-nsrwuca-shard-00-01.dldhqvh.mongodb.net:27017,ac-nsrwuca-shard-00-02.dldhqvh.mongodb.net:27017/?ssl=true&replicaSet=atlas-793vv6-shard-0&authSource=admin&retryWrites=true&w=majority")
 db = client.fruit_shop
 rec = db.items_list
 
